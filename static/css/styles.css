@@ -67,3 +67,21 @@ textarea,
 select {
   font: inherit;
 }
+
+body {
+    background: linear-gradient(to bottom, rgba(5, 0, 255,1) 60%, rgba(6, 5, 78,1) 100%);
+}
+
+.container_block {
+    display: flex;
+    justify-content: center;
+}
+
+.cb1_greetings_text {
+    width: 60%;
+}
+
+.greetings_text {
+    text-align: center;
+    font: 2em serif;
+}
