@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
 </head>
-<body>
-{% block content %}empty{% endblock %}
+<body class="none__body">
+    {% block content %}block content is empty{% endblock %}
+    <script src="{% static 'js/preloader.js' %}"></script>
 </body>
 </html>
