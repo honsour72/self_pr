@@ -1,2 +1,4 @@
-/__pycache__/
+apps/main_page/__pycache__/
+apps/main_page/migrations/__pycache__/
+config/__pycache__/
 dich.txt
