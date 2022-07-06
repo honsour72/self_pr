@@ -6,11 +6,20 @@ let
     perc_display        = document.getElementById('percents'),
     non_scrolled_body   = document.querySelector('.none__body');
 
+//На случай пока на сайте нет изображений
+if( images_total_count == 0 ) {
+    images_total_count = 1;
+}
+
 for(let i = 0; i < images_total_count; i++) {
     image_clone         = new Image();
     image_clone.onload  = image_loaded;
     image_clone.onerror = image_loaded;
-    image_clone.src = images[i].src;
+    if( images.length == 0) {
+        image_clone.src = 0;
+    } else {
+        image_clone.src = images[i].src;
+    }
 }
 
 function image_loaded() {
